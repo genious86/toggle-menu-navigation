@@ -49,11 +49,12 @@ body{
 .menu {
     width: 60px;
     height: 60px;
-    background: rgb(0, 0, 0);
+    background: rgb(103, 231, 248);
     position: absolute;
     transform: translateY(-30px);
     transition: transform 0.7s, width 0.7s, height 0.7s;
     transition-delay: 1s, 0.5s, 0.5s;
+    
     
 }
 
@@ -71,6 +72,8 @@ body{
     align-items: center;
     gap: 35px;
     line-height: 80px;
+    color: blue;
+    font-size: 1.7em;
 }
 
 .menu ul li{
@@ -80,6 +83,28 @@ body{
     transform: translateY(-30px);
     transition: 0.25s;
     opacity: 0;
-    transition-delay: var(--i);
+     
 
+}
+
+.toggle.active ~ .menu ul li{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: calc(0.75s + var(--i));
+}
+
+.menu ul li:nth-child(3) {
+    width: 30px;
+}
+
+.menu ul li a {
+    display: block;
+    font-size: 1.7em;
+    text-decoration: none;
+    color: rgb(50, 4, 255);
+    
+}
+
+.menu ul li :hover {
+    color: red;
 }
