@@ -63,3 +63,23 @@ body{
     transform: translateY(0px);
     transition-delay: 0s, 0.5s , 0.5s;
 }
+
+.menu ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    line-height: 80px;
+}
+
+.menu ul li{
+
+    list-style: none;
+    cursor: pointer;
+    transform: translateY(-30px);
+    transition: 0.25s;
+    opacity: 0;
+    transition-delay: var(--i);
+
+}
