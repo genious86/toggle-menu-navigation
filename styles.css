@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: bisque;
+}
+
+.navigation {
+    position: relative;
+}
+
+.toggle {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    background: blue;
+    cursor: pointer;
+}
+
+.toggle::before {
+    content: "+";
+    position: absolute;
+    font-size: 3em;
+    color: whitesmoke;
+    transition: 1.5s;
+}
