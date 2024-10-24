@@ -14,6 +14,9 @@ body{
 
 .navigation {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .toggle {
@@ -25,6 +28,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
+    transform: translateY(-30px);
+    z-index: 10;
 }
 
 .toggle::before {
@@ -37,4 +43,13 @@ body{
 
 .toggle.active::before{
     transform: rotate(225deg);
+}
+
+.menu {
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: absolute;
+    border-radius: 70%;
+    transform: translateY(-30px);
 }
